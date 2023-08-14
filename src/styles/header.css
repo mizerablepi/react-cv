@@ -1,0 +1,23 @@
+.cv-header {
+  text-align: center;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border-width: 0 0 0.1rem 0;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.cv-header .input {
+  font-size: 3rem;
+  width: 100%;
+}
+
+.first-name {
+  text-align: end;
+}
+
+.last-name {
+  color: gray;
+}
