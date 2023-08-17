@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #efefef;
+}
+
+.cv {
+  width: 38rem;
+}
+
+.contact {
+  min-width: 12rem;
+}
+
+.about {
+  max-width: 35rem;
+}
+
+.left-body {
+  min-width: 12rem;
+}
+
+.right-body {
+  max-width: 35rem;
+}
