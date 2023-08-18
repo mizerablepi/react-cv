@@ -39,17 +39,47 @@ export default function App() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati praesentium accusamus veniam facere impedit maxime facilis? Harum et placeat impedit suscipit magnam aperiam, voluptate ratione fugiat delectus quae sint.",
     },
     {
-      title: "YOUR JOB TITLE",
-      company: "company name",
-      start: "2015",
-      end: "2019",
+      title: "YOUR JOB ",
+      company: "company",
+      start: "1111",
+      end: "2222",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati praesentium accusamus veniam facere impedit maxime facilis? Harum et placeat impedit suscipit magnam aperiam, voluptate ratione fugiat delectus quae sint.",
     },
   ]);
+  const [education, setEducation] = useState({
+    name: "YOUR HIGHEST DEGREE",
+    college: "College Name",
+    year: "2018",
+  });
   return (
     <div className="flex justify-between">
-      <Aside />
+      <Aside
+        firstName={firstName}
+        lastName={lastName}
+        jobTitle={jobTitle}
+        number={number}
+        email={email}
+        linkedin={linkedin}
+        address={address}
+        about={about}
+        skills={skills}
+        awards={awards}
+        experiences={experiences}
+        education={education}
+        onFirstNameChange={setFirstName}
+        onLastNameChange={setLastName}
+        onJobTitleChange={setJobTitle}
+        onNumberChange={setNumber}
+        onEmailChange={setEmail}
+        onLinkedinChange={setlinkedin}
+        onAddressChange={setAddress}
+        onAboutChange={setAbout}
+        onSkillsChange={setSkills}
+        onAwardsChange={setAwards}
+        onExperienceChange={setExperiences}
+        onEducationChange={setEducation}
+      />
       <CV
         firstName={firstName}
         lastName={lastName}
@@ -62,6 +92,7 @@ export default function App() {
         skills={skills}
         awards={awards}
         experiences={experiences}
+        education={education}
       />
     </div>
   );

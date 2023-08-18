@@ -22,10 +22,10 @@ export default function CV({
   education,
 }) {
   return (
-    <div className="cv bg-white shadow-md px-6 m-2 text-xs">
+    <div className="cv bg-white shadow-md px-6 m-2 text-xs h-min">
       <Name firstName={firstName} lastName={lastName} />
       <Title jobTitle={jobTitle} />
-      <div className="px-1 py-6 border-b-2 border-gray-100 border-solid flex gap-6 justify-between">
+      <div className="px-1 py-6 border-b-2 border-gray-200 border-solid flex gap-6 justify-between">
         <Contact
           number={number}
           email={email}
@@ -35,7 +35,7 @@ export default function CV({
         <About about={about} />
       </div>
       <div className="flex justify-between py-9 gap-6">
-        <div className="left-body flex flex-col border-r-2 border-gray-100 border-solid">
+        <div className="left-body flex flex-col border-r-2 border-gray-200 border-solid">
           <Skills skills={skills} />
           <Awards awards={awards} />
         </div>
